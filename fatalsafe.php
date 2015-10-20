@@ -61,10 +61,10 @@ class FatalSafe
         $currentTheme = wp_get_theme();
         if ($error) {
             $foundOneFromTwentySeries = false;
-            $themes = wp_get_themes(array('errors' => false, 'allowed' => null, 'blog_id' => 0));
+            $themes = wp_get_themes(array('errors' => false, 'allowed' => true, 'blog_id' => 0));
 
             foreach ($themes as $slug => $theme) {
-                if (strpos($slug, 'twenty') !== false) {
+                if (strpos($slug, 'twenty') !== false && $theme->get_stylesheet() != $currentTheme->get_stylesheet()) {
                     switch_theme($theme->get_stylesheet());
                     $foundOneFromTwentySeries = true;
                     break;
