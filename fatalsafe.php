@@ -84,6 +84,7 @@ class FatalSafe
 
             $fatalErrorMessage = "Your <b>{$currentTheme->Name}</b> theme threw a fatal error on <b>line #{$error['line']}</b> in {$error['file']}. The error message was: <b>{$error['message']}</b>. Please fix it.'";
             update_option('fatalsafe', $fatalErrorMessage);
+            echo "<h1>Don't Panic! Refresh This Page To Get Some Oxygen</h1>";
         }
 
     }
