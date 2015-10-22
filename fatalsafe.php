@@ -74,6 +74,10 @@ class FatalSafe
     {
         $error = error_get_last();
         $themeDirectory = basename(get_template_directory());
+	    $styleSheetDirectory = basename( get_stylesheet_directory() );
+	    if( $styleSheetDirectory !== $themeDirectory ) {
+		    $themeDirectory = $styleSheetDirectory;
+	    }
         $pluginDirectory = WP_PLUGIN_DIR;
 
         $currentTheme = wp_get_theme();
