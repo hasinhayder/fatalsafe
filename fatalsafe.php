@@ -5,7 +5,7 @@
  * Description: Saves you when you are locked when you get a fatal error while editing a live plugin or theme file from WordPress admin panel theme editor. In this case FatalSafe saves you by quickly switching the theme or deactivating the plugin that creates the fatal error.
  * Version: 1.0.0
  * Author: Hasin Hayder From ThemeBucket
- * Author URI: http://hasin.me
+ * Author URI: http://themebucket.net
  * Plugin URI: https://github.com/hasinhayder/fatalsafe
  */
 class FatalSafe {
