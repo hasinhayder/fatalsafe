@@ -4,4 +4,4 @@ An elegant way to save your ass when you're struck by **Fatal Error** while edit
 
 Just remember to activate **FatalSafe** before starting your **dirty** live theme-edit task.
 
-![](http://i.imgur.com/gAWypg7.png)
+![](http://imgur.com/a/MfzPS.png)
